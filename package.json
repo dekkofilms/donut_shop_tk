@@ -1,0 +1,33 @@
+{
+  "name": "donut_shop_tk",
+  "version": "1.0.0",
+  "description": "donut shop",
+  "main": "server.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha",
+    "start": "NODE_ENV=development nodemon"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dekkofilms/donut_shop_tk.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dekkofilms/donut_shop_tk/issues"
+  },
+  "homepage": "https://github.com/dekkofilms/donut_shop_tk#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "ejs": "^2.5.2",
+    "express": "^4.14.0",
+    "knex": "^0.12.2",
+    "pg": "^6.1.0"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.0",
+    "morgan": "^1.7.0",
+    "supertest": "^2.0.0"
+  }
+}
