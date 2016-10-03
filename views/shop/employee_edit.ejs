@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <form method="POST" action="/shops/<%= employee.shop_id%>/employees/<%= employee.id%>?_method=PUT">
+    <input type="text" name="first_name" value="<%=employee.first_name%>">
+    <input type="text" name="last_name" value="<%=employee.last_name%>">
+    <input type="text" name="shop_id" value="<%=employee.shop_id%>">
+    <input type="text" name="favorite_donut" value="<%=employee.favorite_donut%>">
+    <input type="submit">
+  </form>
+</body>
+</html>

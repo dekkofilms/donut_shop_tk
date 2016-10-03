@@ -6,7 +6,7 @@ module.exports = {
     client: 'pg',
     connection: {
       database: 'donut_shop_dev',
-      host: 'localserver'
+      host: 'localhost'
     }
   },
 
@@ -14,7 +14,7 @@ module.exports = {
     client: 'pg',
     connection: {
       database: 'donut_shop_test',
-      host: 'localserver'
+      host: 'localhost'
     }
   },
 
