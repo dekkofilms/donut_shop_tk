@@ -14,7 +14,11 @@
     <li>Your store city: <%= shop.city%></li>
   </ul>
   <h3>Your Employees:</h3>
-
+  <ul>
+    <% employees.forEach(function (employee) { %>
+      <li><%= employee.first_name %> <%= employee.last_name %></li>
+    <% }) %>
+  </ul>
   <h3>Your Donuts:</h3>
 </body>
 </html>

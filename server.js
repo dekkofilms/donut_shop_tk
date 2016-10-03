@@ -48,8 +48,12 @@ app.get('/shops/new', function (req, res) {
 
 app.get('/shops/:shop_id', function (req, res) {
   var shopID = req.params.shop_id;
-  knex('shops').where('id', shopID).first().then(function (data) {
-    res.render('shop/showpage.ejs', {shop: data});
+  knex('shops').where('id', shopID).first().then(function (basicinfo) {
+    knex('employees').where('shop_id', shopID).then(function (employees) {
+      console.log(shopID);
+      console.log(employees);
+      res.render('shop/showpage.ejs', {shop: basicinfo, employees: employees});
+    });
   });
 });
 
